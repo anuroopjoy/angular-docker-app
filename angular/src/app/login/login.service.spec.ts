@@ -39,7 +39,7 @@ describe('Login Service', () => {
       .login(inputData)
       .then((data) => expect(data).toEqual(testData));
 
-    const req = httpController.expectOne('login');
+    const req = httpController.expectOne('http://localhost:3000/login');
 
     expect(req.request.method).toEqual('POST');
 
@@ -61,7 +61,7 @@ describe('Login Service', () => {
       }
     );
 
-    const req = httpController.expectOne('login');
+    const req = httpController.expectOne('http://localhost:3000/login');
 
     expect(req.request.method).toEqual('POST');
 

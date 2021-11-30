@@ -54,6 +54,6 @@ describe('Highlight directive', () => {
   });
 
   it('bare <h2> should not have a customProperty', () => {
-    expect(bareH2.properties.customProperty).toBeUndefined();
+    expect(bareH2.properties['customProperty']).toBeUndefined();
   });
 });

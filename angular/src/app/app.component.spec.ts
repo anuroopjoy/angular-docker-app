@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
+/* eslint-disable @angular-eslint/component-selector */
 @Component({
   selector: 'login',
   template: 'Login Component',
@@ -19,6 +20,7 @@ class LoginComponent {}
   selector: 'login',
   template: 'Home Component',
 })
+/* eslint-enable @angular-eslint/component-selector */
 class HomeComponent {}
 describe('App Component', () => {
   let fixture: ComponentFixture<AppComponent>;
