@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  angular:
+    image: js/angular:1.0.0
+    build: angular
+    ports:
+      - 4200:80
+
+  server:
+    image: js/server:1.0.0
+    build: server
+    ports:
+      - 3000:3000
